@@ -5,59 +5,59 @@ Projetos realizados durante o curso de Sistemas Embarcados - Projeto final basea
 
 ***🚀 Funcionalidades***
 
-Monitoramento em Tempo Real: Análise contínua do som ambiente utilizando ADC com DMA para amostragem eficiente.
+--Monitoramento em Tempo Real: Análise contínua do som ambiente utilizando ADC com DMA para amostragem eficiente.
 
-Matriz de LED RGB 5x5: Exibição de padrões de alerta visuais dinâmicos.
+--Matriz de LED RGB 5x5: Exibição de padrões de alerta visuais dinâmicos.
 
-Display OLED: Exibição de mensagens de status e avisos.
+--Display OLED: Exibição de mensagens de status e avisos.
 
-Indicadores RGB com PWM: Iluminação colorida para diferentes níveis de alerta.
+--Indicadores RGB com PWM: Iluminação colorida para diferentes níveis de alerta.
 
-Botões de Controle Manual: Interface para interação direta.
+--Botões de Controle Manual: Interface para interação direta.
 
-Buzzer para Alertas Sonoros: Sinalização de eventos suspeitos.
+--Buzzer para Alertas Sonoros: Sinalização de eventos suspeitos.
 
-Padrões de Alerta Visuais: Exibição de formas como diamante, "X" e ponto de exclamação para alertas diferenciados.
+--Padrões de Alerta Visuais: Exibição de formas como diamante, "X" e ponto de exclamação para alertas diferenciados.
 
 ***🔧 Implementação Técnica***
 
-DMA para Amostragem de Som: Eficiência na captura de dados do microfone.
+--DMA para Amostragem de Som: Eficiência na captura de dados do microfone.
 
-PWM para Controle de LEDs RGB: Mistura de cores precisa para sinalização.
+--PWM para Controle de LEDs RGB: Mistura de cores precisa para sinalização.
 
-Comunicação via I2C: Integração com o display OLED SSD1306.
+--Comunicação via I2C: Integração com o display OLED SSD1306.
 
-Controle de LED WS2812B via PIO: Gerenciamento otimizado dos LEDs endereçáveis.
+--Controle de LED WS2812B via PIO: Gerenciamento otimizado dos LEDs endereçáveis.
 
-Detecção de Som Configurável: Ajuste de limiares para acionamento de alertas.
+--Detecção de Som Configurável: Ajuste de limiares para acionamento de alertas.
 
-Arquitetura Modular: Código estruturado com módulos separados para:
+--Arquitetura Modular: Código estruturado com módulos separados para:
 
-Controle da matriz de LED
+--Controle da matriz de LED
 
-Amostragem de som
+--Amostragem de som
 
-Gerenciamento do display
+--Gerenciamento do display
 
-Entrada por botão
+--Entrada por botão
 
-Controle do buzzer
+--Controle do buzzer
 
 ***🛠 Componentes Utilizados***
 
-Raspberry Pi Pico
+--Raspberry Pi Pico
 
-Módulo de Microfone
+--Módulo de Microfone
 
-Matriz de LEDs WS2812B 5x5
+--Matriz de LEDs WS2812B 5x5
 
-Display OLED SSD1306
+--Display OLED SSD1306
 
-Botão de Pressão
+--Botão de Pressão
 
-Buzzer
+--Buzzer
 
-LED RGB
+--LED RGB
 
 ***📌 Como Funciona?***
 
