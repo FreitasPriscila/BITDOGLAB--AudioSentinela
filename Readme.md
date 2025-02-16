@@ -1,9 +1,9 @@
-Raspberry-Pi-Pico-W---BitDogLab
+**Raspberry-Pi-Pico-W---BitDogLab**
 Projetos realizados durante o curso de Sistemas Embarcados - Projeto final baseado na ideia de totens de segurança
 
 -> Um sistema de segurança inteligente que monitora sons ambientes usando um microfone e fornece alertas visuais através de matrizes de LED e um display OLED. O projeto é baseado no microcontrolador Raspberry Pi Pico.
 
-🚀 Funcionalidades
+***🚀 Funcionalidades***
 
 Monitoramento em Tempo Real: Análise contínua do som ambiente utilizando ADC com DMA para amostragem eficiente.
 
@@ -19,7 +19,7 @@ Buzzer para Alertas Sonoros: Sinalização de eventos suspeitos.
 
 Padrões de Alerta Visuais: Exibição de formas como diamante, "X" e ponto de exclamação para alertas diferenciados.
 
-🔧 Implementação Técnica
+***🔧 Implementação Técnica***
 
 DMA para Amostragem de Som: Eficiência na captura de dados do microfone.
 
@@ -43,7 +43,7 @@ Entrada por botão
 
 Controle do buzzer
 
-🛠 Componentes Utilizados
+***🛠 Componentes Utilizados***
 
 Raspberry Pi Pico
 
@@ -59,6 +59,6 @@ Buzzer
 
 LED RGB
 
-📌 Como Funciona?
+***📌 Como Funciona?***
 
 O sistema monitora continuamente o nível sonoro ambiente. Quando ruídos suspeitos são detectados acima de um limite predefinido, ele ativa alertas visuais e sonoros, tornando-se uma solução eficaz para monitoramento de segurança.
