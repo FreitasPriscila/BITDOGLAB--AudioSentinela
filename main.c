@@ -53,7 +53,7 @@ int main() {
     pwm_set_wrap(slice_red, 255);
     pwm_set_wrap(slice_green, 255);
     pwm_set_wrap(slice_blue, 255);
-
+  //divisor de clock de um slice
     pwm_set_clkdiv(slice_red, 64);
     pwm_set_clkdiv(slice_green, 64);
     pwm_set_clkdiv(slice_blue, 64);
@@ -66,7 +66,7 @@ int main() {
   // Inicialização do i2c
     i2c_init(i2c1, ssd1306_i2c_clock * 1000);
     gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
+    gpio_set_fuxnction(I2C_SCL, GPIO_FUNC_I2C);
     gpio_pull_up(I2C_SDA);
     gpio_pull_up(I2C_SCL);
 
