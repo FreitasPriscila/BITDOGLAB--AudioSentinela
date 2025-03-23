@@ -6,6 +6,8 @@
 #include "buttonA.c"
 #include "pwm.c"
 
+#define BUTTON_B 6
+
 void display_initial_message(uint8_t* ssd, struct render_area* frame_area) {
     char *text[] = {"   som suspeito  ", " detectado"};
     int y = 30;
@@ -22,11 +24,14 @@ int main() {
   stdio_init_all();   // Inicializa os tipos stdio padrão presentes ligados ao binário
   
     gpio_init(BUTTON_A);
+    gpio_init(BUTTON_B);
     //definir como entrada digital, então microcontrolador irá ler o estado lógico
     gpio_set_dir(BUTTON_A, GPIO_IN);
+    gpio_set_dir(BUTTON_B, GPIO_IN);
     //gpio_pull_up=ativa o resistor interno do microcontrolador para o pino 5, conecta o pino à uma alta tensão (High), quando pressiona
     //do ele é conectado ao pino GND que tira toda a tensão do pino(LOW)
     gpio_pull_up(BUTTON_A);
+    gpio_pull_up(BUTTON_B);
 
   // Configuração dos pinos PWM
     gpio_set_function(13, GPIO_FUNC_PWM); // Vermelho
@@ -163,7 +168,7 @@ int main() {
         avg = 2.f * abs(ADC_ADJUST(avg));
 
         // 2. Check sound threshold and update displays
-        if (avg > 2.5f) {
+        if (avg > 2.5f || !gpio_get(BUTTON_B)) {
           display_initial_message(ssd, &frame_area);
           show_alert_sequence();
           // Clear display
